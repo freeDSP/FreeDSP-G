@@ -1,0 +1,566 @@
+
+(rules PCB FreeDSP-G
+  (snap_angle 
+    fortyfive_degree
+  )
+  (autoroute_settings
+    (fanout on)
+    (autoroute on)
+    (postroute on)
+    (vias on)
+    (via_costs 50)
+    (plane_via_costs 5)
+    (start_ripup_costs 100)
+    (start_pass_no 90)
+    (layer_rule F.Cu
+      (active on)
+      (preferred_direction horizontal)
+      (preferred_direction_trace_costs 1.0)
+      (against_preferred_direction_trace_costs 2.7)
+    )
+    (layer_rule In1.Cu
+      (active off)
+      (preferred_direction horizontal)
+      (preferred_direction_trace_costs 1.0)
+      (against_preferred_direction_trace_costs 2.7)
+    )
+    (layer_rule In2.Cu
+      (active off)
+      (preferred_direction horizontal)
+      (preferred_direction_trace_costs 1.0)
+      (against_preferred_direction_trace_costs 2.7)
+    )
+    (layer_rule B.Cu
+      (active on)
+      (preferred_direction vertical)
+      (preferred_direction_trace_costs 1.0)
+      (against_preferred_direction_trace_costs 1.6)
+    )
+  )
+  (rule
+    (width 200.0)
+    (clear 150.2)
+    (clear 100.0 (type smd_to_turn_gap))
+    (clear 200.2 (type default_0.25Thick))
+    (clear 200.2 (type default_0.3mm))
+    (clear 200.2 (type default_0.4mm))
+    (clear 200.2 (type default_0.8mm))
+    (clear 37.6 (type smd_smd))
+    (clear 200.2 (type smd_0.25Thick))
+    (clear 200.2 (type smd_0.3mm))
+    (clear 200.2 (type smd_0.4mm))
+    (clear 200.2 (type smd_0.8mm))
+    (clear 200.2 (type "kicad_default"_0.25Thick))
+    (clear 200.2 (type "kicad_default"_0.3mm))
+    (clear 200.2 (type "kicad_default"_0.4mm))
+    (clear 200.2 (type "kicad_default"_0.8mm))
+    (clear 200.2 (type 0.25Thick_0.25Thick))
+    (clear 200.2 (type 0.25Thick_0.25Thin))
+    (clear 200.2 (type 0.25Thick_0.3mm))
+    (clear 200.2 (type 0.25Thick_0.4mm))
+    (clear 200.2 (type 0.25Thick_0.8mm))
+    (clear 200.2 (type 0.25Thick_1mm))
+    (clear 200.2 (type 0.25Thick_2mm))
+    (clear 200.2 (type 0.25Thin_0.3mm))
+    (clear 200.2 (type 0.25Thin_0.4mm))
+    (clear 200.2 (type 0.25Thin_0.8mm))
+    (clear 200.2 (type 0.3mm_0.3mm))
+    (clear 200.2 (type 0.3mm_0.4mm))
+    (clear 200.2 (type 0.3mm_0.8mm))
+    (clear 200.2 (type 0.3mm_1mm))
+    (clear 200.2 (type 0.3mm_2mm))
+    (clear 200.2 (type 0.4mm_0.4mm))
+    (clear 200.2 (type 0.4mm_0.8mm))
+    (clear 200.2 (type 0.4mm_1mm))
+    (clear 200.2 (type 0.4mm_2mm))
+    (clear 200.2 (type 0.8mm_0.8mm))
+    (clear 200.2 (type 0.8mm_1mm))
+    (clear 200.2 (type 0.8mm_2mm))
+  )
+  (padstack "Via[0-3]_600:300_um"
+    (shape
+      (circle F.Cu 600.0 0.0 0.0)
+    )
+    (shape
+      (circle In1.Cu 600.0 0.0 0.0)
+    )
+    (shape
+      (circle In2.Cu 600.0 0.0 0.0)
+    )
+    (shape
+      (circle B.Cu 600.0 0.0 0.0)
+    )
+    (attach off)
+  )
+  (padstack "Via[0-3]_800:400_um"
+    (shape
+      (circle F.Cu 800.0 0.0 0.0)
+    )
+    (shape
+      (circle In1.Cu 800.0 0.0 0.0)
+    )
+    (shape
+      (circle In2.Cu 800.0 0.0 0.0)
+    )
+    (shape
+      (circle B.Cu 800.0 0.0 0.0)
+    )
+    (attach off)
+  )
+  (padstack "Via[0-3]_700:300_um"
+    (shape
+      (circle F.Cu 700.0 0.0 0.0)
+    )
+    (shape
+      (circle In1.Cu 700.0 0.0 0.0)
+    )
+    (shape
+      (circle In2.Cu 700.0 0.0 0.0)
+    )
+    (shape
+      (circle B.Cu 700.0 0.0 0.0)
+    )
+    (attach off)
+  )
+  (padstack "Via[0-3]_900:500_um"
+    (shape
+      (circle F.Cu 900.0 0.0 0.0)
+    )
+    (shape
+      (circle In1.Cu 900.0 0.0 0.0)
+    )
+    (shape
+      (circle In2.Cu 900.0 0.0 0.0)
+    )
+    (shape
+      (circle B.Cu 900.0 0.0 0.0)
+    )
+    (attach off)
+  )
+  (padstack "Via[0-3]_2000:900_um"
+    (shape
+      (circle F.Cu 2000.0 0.0 0.0)
+    )
+    (shape
+      (circle In1.Cu 2000.0 0.0 0.0)
+    )
+    (shape
+      (circle In2.Cu 2000.0 0.0 0.0)
+    )
+    (shape
+      (circle B.Cu 2000.0 0.0 0.0)
+    )
+    (attach off)
+  )
+  (padstack "Via[0-3]_1000:500_um"
+    (shape
+      (circle F.Cu 1000.0 0.0 0.0)
+    )
+    (shape
+      (circle In1.Cu 1000.0 0.0 0.0)
+    )
+    (shape
+      (circle In2.Cu 1000.0 0.0 0.0)
+    )
+    (shape
+      (circle B.Cu 1000.0 0.0 0.0)
+    )
+    (attach off)
+  )
+  (padstack "Via[0-3]_1500:700_um"
+    (shape
+      (circle F.Cu 1500.0 0.0 0.0)
+    )
+    (shape
+      (circle In1.Cu 1500.0 0.0 0.0)
+    )
+    (shape
+      (circle In2.Cu 1500.0 0.0 0.0)
+    )
+    (shape
+      (circle B.Cu 1500.0 0.0 0.0)
+    )
+    (attach off)
+  )
+  (padstack "Via[0-3]_1200:600_um"
+    (shape
+      (circle F.Cu 1200.0 0.0 0.0)
+    )
+    (shape
+      (circle In1.Cu 1200.0 0.0 0.0)
+    )
+    (shape
+      (circle In2.Cu 1200.0 0.0 0.0)
+    )
+    (shape
+      (circle B.Cu 1200.0 0.0 0.0)
+    )
+    (attach off)
+  )
+  (via 
+    "Via[0-3]_600:300_um" "Via[0-3]_600:300_um" default
+  )
+  (via 
+    "Via[0-3]_800:400_um" "Via[0-3]_800:400_um" default
+  )
+  (via 
+    "Via[0-3]_700:300_um" "Via[0-3]_700:300_um" default
+  )
+  (via 
+    "Via[0-3]_900:500_um" "Via[0-3]_900:500_um" default
+  )
+  (via 
+    "Via[0-3]_2000:900_um" "Via[0-3]_2000:900_um" default
+  )
+  (via 
+    "Via[0-3]_1000:500_um" "Via[0-3]_1000:500_um" default
+  )
+  (via 
+    "Via[0-3]_1500:700_um" "Via[0-3]_1500:700_um" default
+  )
+  (via 
+    "Via[0-3]_1200:600_um" "Via[0-3]_1200:600_um" default
+  )
+  (via 
+    "Via[0-3]_600:300_um-kicad_default" "Via[0-3]_600:300_um" "kicad_default"
+  )
+  (via 
+    "Via[0-3]_800:400_um-kicad_default" "Via[0-3]_800:400_um" "kicad_default"
+  )
+  (via 
+    "Via[0-3]_700:300_um-kicad_default" "Via[0-3]_700:300_um" "kicad_default"
+  )
+  (via 
+    "Via[0-3]_900:500_um-kicad_default" "Via[0-3]_900:500_um" "kicad_default"
+  )
+  (via 
+    "Via[0-3]_2000:900_um-kicad_default" "Via[0-3]_2000:900_um" "kicad_default"
+  )
+  (via 
+    "Via[0-3]_1000:500_um-kicad_default" "Via[0-3]_1000:500_um" "kicad_default"
+  )
+  (via 
+    "Via[0-3]_1500:700_um-kicad_default" "Via[0-3]_1500:700_um" "kicad_default"
+  )
+  (via 
+    "Via[0-3]_1200:600_um-kicad_default" "Via[0-3]_1200:600_um" "kicad_default"
+  )
+  (via 
+    "Via[0-3]_600:300_um-0.25Thick" "Via[0-3]_600:300_um" 0.25Thick
+  )
+  (via 
+    "Via[0-3]_800:400_um-0.25Thick" "Via[0-3]_800:400_um" 0.25Thick
+  )
+  (via 
+    "Via[0-3]_700:300_um-0.25Thick" "Via[0-3]_700:300_um" 0.25Thick
+  )
+  (via 
+    "Via[0-3]_900:500_um-0.25Thick" "Via[0-3]_900:500_um" 0.25Thick
+  )
+  (via 
+    "Via[0-3]_2000:900_um-0.25Thick" "Via[0-3]_2000:900_um" 0.25Thick
+  )
+  (via 
+    "Via[0-3]_1000:500_um-0.25Thick" "Via[0-3]_1000:500_um" 0.25Thick
+  )
+  (via 
+    "Via[0-3]_1500:700_um-0.25Thick" "Via[0-3]_1500:700_um" 0.25Thick
+  )
+  (via 
+    "Via[0-3]_1200:600_um-0.25Thick" "Via[0-3]_1200:600_um" 0.25Thick
+  )
+  (via 
+    "Via[0-3]_600:300_um-0.25Thin" "Via[0-3]_600:300_um" 0.25Thin
+  )
+  (via 
+    "Via[0-3]_800:400_um-0.25Thin" "Via[0-3]_800:400_um" 0.25Thin
+  )
+  (via 
+    "Via[0-3]_700:300_um-0.25Thin" "Via[0-3]_700:300_um" 0.25Thin
+  )
+  (via 
+    "Via[0-3]_900:500_um-0.25Thin" "Via[0-3]_900:500_um" 0.25Thin
+  )
+  (via 
+    "Via[0-3]_2000:900_um-0.25Thin" "Via[0-3]_2000:900_um" 0.25Thin
+  )
+  (via 
+    "Via[0-3]_1000:500_um-0.25Thin" "Via[0-3]_1000:500_um" 0.25Thin
+  )
+  (via 
+    "Via[0-3]_1500:700_um-0.25Thin" "Via[0-3]_1500:700_um" 0.25Thin
+  )
+  (via 
+    "Via[0-3]_1200:600_um-0.25Thin" "Via[0-3]_1200:600_um" 0.25Thin
+  )
+  (via 
+    "Via[0-3]_600:300_um-0.3mm" "Via[0-3]_600:300_um" 0.3mm
+  )
+  (via 
+    "Via[0-3]_800:400_um-0.3mm" "Via[0-3]_800:400_um" 0.3mm
+  )
+  (via 
+    "Via[0-3]_700:300_um-0.3mm" "Via[0-3]_700:300_um" 0.3mm
+  )
+  (via 
+    "Via[0-3]_900:500_um-0.3mm" "Via[0-3]_900:500_um" 0.3mm
+  )
+  (via 
+    "Via[0-3]_2000:900_um-0.3mm" "Via[0-3]_2000:900_um" 0.3mm
+  )
+  (via 
+    "Via[0-3]_1000:500_um-0.3mm" "Via[0-3]_1000:500_um" 0.3mm
+  )
+  (via 
+    "Via[0-3]_1500:700_um-0.3mm" "Via[0-3]_1500:700_um" 0.3mm
+  )
+  (via 
+    "Via[0-3]_1200:600_um-0.3mm" "Via[0-3]_1200:600_um" 0.3mm
+  )
+  (via 
+    "Via[0-3]_600:300_um-0.4mm" "Via[0-3]_600:300_um" 0.4mm
+  )
+  (via 
+    "Via[0-3]_800:400_um-0.4mm" "Via[0-3]_800:400_um" 0.4mm
+  )
+  (via 
+    "Via[0-3]_700:300_um-0.4mm" "Via[0-3]_700:300_um" 0.4mm
+  )
+  (via 
+    "Via[0-3]_900:500_um-0.4mm" "Via[0-3]_900:500_um" 0.4mm
+  )
+  (via 
+    "Via[0-3]_2000:900_um-0.4mm" "Via[0-3]_2000:900_um" 0.4mm
+  )
+  (via 
+    "Via[0-3]_1000:500_um-0.4mm" "Via[0-3]_1000:500_um" 0.4mm
+  )
+  (via 
+    "Via[0-3]_1500:700_um-0.4mm" "Via[0-3]_1500:700_um" 0.4mm
+  )
+  (via 
+    "Via[0-3]_1200:600_um-0.4mm" "Via[0-3]_1200:600_um" 0.4mm
+  )
+  (via 
+    "Via[0-3]_600:300_um-0.8mm" "Via[0-3]_600:300_um" 0.8mm
+  )
+  (via 
+    "Via[0-3]_800:400_um-0.8mm" "Via[0-3]_800:400_um" 0.8mm
+  )
+  (via 
+    "Via[0-3]_700:300_um-0.8mm" "Via[0-3]_700:300_um" 0.8mm
+  )
+  (via 
+    "Via[0-3]_900:500_um-0.8mm" "Via[0-3]_900:500_um" 0.8mm
+  )
+  (via 
+    "Via[0-3]_2000:900_um-0.8mm" "Via[0-3]_2000:900_um" 0.8mm
+  )
+  (via 
+    "Via[0-3]_1000:500_um-0.8mm" "Via[0-3]_1000:500_um" 0.8mm
+  )
+  (via 
+    "Via[0-3]_1500:700_um-0.8mm" "Via[0-3]_1500:700_um" 0.8mm
+  )
+  (via 
+    "Via[0-3]_1200:600_um-0.8mm" "Via[0-3]_1200:600_um" 0.8mm
+  )
+  (via 
+    "Via[0-3]_600:300_um-1mm" "Via[0-3]_600:300_um" 1mm
+  )
+  (via 
+    "Via[0-3]_800:400_um-1mm" "Via[0-3]_800:400_um" 1mm
+  )
+  (via 
+    "Via[0-3]_700:300_um-1mm" "Via[0-3]_700:300_um" 1mm
+  )
+  (via 
+    "Via[0-3]_900:500_um-1mm" "Via[0-3]_900:500_um" 1mm
+  )
+  (via 
+    "Via[0-3]_2000:900_um-1mm" "Via[0-3]_2000:900_um" 1mm
+  )
+  (via 
+    "Via[0-3]_1000:500_um-1mm" "Via[0-3]_1000:500_um" 1mm
+  )
+  (via 
+    "Via[0-3]_1500:700_um-1mm" "Via[0-3]_1500:700_um" 1mm
+  )
+  (via 
+    "Via[0-3]_1200:600_um-1mm" "Via[0-3]_1200:600_um" 1mm
+  )
+  (via 
+    "Via[0-3]_600:300_um-2mm" "Via[0-3]_600:300_um" 2mm
+  )
+  (via 
+    "Via[0-3]_800:400_um-2mm" "Via[0-3]_800:400_um" 2mm
+  )
+  (via 
+    "Via[0-3]_700:300_um-2mm" "Via[0-3]_700:300_um" 2mm
+  )
+  (via 
+    "Via[0-3]_900:500_um-2mm" "Via[0-3]_900:500_um" 2mm
+  )
+  (via 
+    "Via[0-3]_2000:900_um-2mm" "Via[0-3]_2000:900_um" 2mm
+  )
+  (via 
+    "Via[0-3]_1000:500_um-2mm" "Via[0-3]_1000:500_um" 2mm
+  )
+  (via 
+    "Via[0-3]_1500:700_um-2mm" "Via[0-3]_1500:700_um" 2mm
+  )
+  (via 
+    "Via[0-3]_1200:600_um-2mm" "Via[0-3]_1200:600_um" 2mm
+  )
+  (via_rule
+    default "Via[0-3]_600:300_um"
+  )
+  (via_rule
+    "kicad_default" "Via[0-3]_600:300_um-kicad_default"
+  )
+  (via_rule
+    0.25Thick "Via[0-3]_800:400_um-0.25Thick"
+  )
+  (via_rule
+    0.25Thin "Via[0-3]_700:300_um-0.25Thin"
+  )
+  (via_rule
+    0.3mm "Via[0-3]_900:500_um-0.3mm"
+  )
+  (via_rule
+    0.4mm "Via[0-3]_800:400_um-0.4mm"
+  )
+  (via_rule
+    0.8mm "Via[0-3]_800:400_um-0.8mm"
+  )
+  (via_rule
+    1mm "Via[0-3]_800:400_um-1mm"
+  )
+  (via_rule
+    2mm "Via[0-3]_2000:900_um-2mm"
+  )
+  (class default
+    (clearance_class default)
+    (via_rule default)
+    (rule
+      (width 200.0)
+    )
+    (circuit 
+      (use_layer F.Cu B.Cu)
+    )
+  )
+  (class "kicad_default"
+    GNDA GND +10V +3V3 /DSP/DVDD +5VA "LINE-R" "LINE-L"
+    "Net-(C3-Pad2)" "Net-(C3-Pad1)" DC12V "Net-(C6-Pad1)" "POT_7" "Net-(C8-Pad1)" "Net-(C11-Pad2)" "Net-(C11-Pad1)"
+    "Net-(C12-Pad1)" "Net-(C13-Pad1)" "Net-(C14-Pad1)" "Net-(C15-Pad2)" "Net-(C16-Pad2)" "Net-(C17-Pad2)" "Net-(C18-Pad1)" "Net-(C19-Pad1)"
+    "Net-(C20-Pad1)" "Net-(C21-Pad1)" "Net-(C22-Pad1)" "Net-(C23-Pad1)" "Net-(C24-Pad2)" "Net-(C24-Pad1)" "Net-(C25-Pad1)" "EFF_RTN"
+    "Net-(C26-Pad1)" "Net-(C27-Pad2)" "Net-(C27-Pad1)" "Net-(C28-Pad1)" "Net-(C29-Pad2)" "Net-(C29-Pad1)" "Net-(C30-Pad2)" "Net-(C30-Pad1)"
+    "Net-(C33-Pad2)" "Net-(C33-Pad1)" +3.3VA "NEG_BIAS" "Net-(C42-Pad2)" "Net-(C44-Pad2)" "Net-(C46-Pad2)" "Net-(C46-Pad1)"
+    "Net-(C47-Pad2)" "Net-(C47-Pad1)" "Net-(C48-Pad1)" "Net-(C49-Pad1)" "OUT_RIGHT" "Net-(C51-Pad1)" "OUT_LEFT" "MON_OUT"
+    "Net-(C54-Pad1)" "Net-(C54-Pad2)" "Net-(C55-Pad1)" "Net-(C55-Pad2)" "Net-(C56-Pad2)" "Net-(C57-Pad2)" "Net-(C62-Pad2)" "Net-(C63-Pad1)"
+    "Net-(C64-Pad2)" "Net-(C65-Pad1)" "Net-(C70-Pad2)" "Net-(C71-Pad2)" "Net-(C75-Pad2)" "Net-(C75-Pad1)" "Net-(C76-Pad2)" "Net-(C76-Pad1)"
+    "Net-(C77-Pad1)" "Net-(C78-Pad1)" "Net-(C79-Pad1)" "Net-(C80-Pad1)" "Net-(C89-Pad2)" "Net-(C89-Pad1)" "Net-(C90-Pad2)" "Net-(C96-Pad1)"
+    "PHONES_MUTE" "Net-(C98-Pad1)" "Net-(C100-Pad1)" "Net-(C101-Pad2)" "Net-(C104-Pad1)" "Net-(C107-Pad1)" "Net-(C128-Pad1)" "Net-(D1-Pad2)"
+    "Net-(D3-Pad2)" +12V "Net-(D8-Pad2)" "~DSP-RESET" "Net-(D9-Pad1)" "Net-(D10-Pad2)" "Net-(FB1-Pad2)" "LRK_OUT1"
+    "DAT_OUT1" "BCK_OUT1" MCLK3 "Net-(IC1-Pad7)" "Net-(IC1-Pad6)" "LRK_OUT0" "DAT_OUT0" "BCK_OUT0"
+    MCLK2 "Net-(IC2-Pad7)" "Net-(IC2-Pad6)" MCLK1 "Net-(IC3-Pad7)" "Net-(IC3-Pad8)" "Net-(IC3-Pad9)" MCLK0
+    "Net-(IC4-Pad7)" "Net-(IC4-Pad8)" "Net-(IC4-Pad9)" "Net-(IC5-Pad5)" "Net-(IC5-Pad4)" "Net-(IC5-Pad3)" "Net-(IC5-Pad2)" "EFF_SND"
+    "LOOP_ENB" "Net-(J2-PadTN)" "Net-(J2-PadSN)" "Net-(J2-PadRN)" "GUITAR_IN" "Net-(J3-PadTN)" "Net-(J3-PadR)" "Net-(J3-PadT)"
+    "Net-(J4-Pad3)" "PSW_4" "PSW_2" "ON_GRNn" "ON_MIXn" "CH_SEL" "EFF_ON" "PSW_3"
+    "PSW_1" "ON_REDn" "ON_OVFn" "SEL_An_B" "POT_6" "POT_4" "POT_2" "POT_0"
+    "POT_5" "POT_3" "POT_1" "Net-(J7-PadTN)" "Net-(J7-PadSN)" "Net-(J7-PadRN)" "Net-(J8-PadTN)" "Net-(J8-PadRN)"
+    "PHONES_LEFT" "PHONES_RIGHT" "Net-(J9-PadTN)" "Net-(J9-PadSN)" "Net-(J9-PadRN)" "Net-(J10-PadTN)" "Net-(J10-PadSN)" "Net-(J10-PadRN)"
+    "LRK_OUT3" "BCK_IN3" "DAT_IN3" "BT_TXD" "Net-(J13-Pad8)" "Net-(J13-Pad4)" "Net-(J13-Pad2)" "Net-(J13-Pad9)"
+    "Net-(J13-Pad7)" "Net-(J13-Pad5)" "Net-(J13-Pad3)" "Net-(J13-Pad1)" "LRK_OUT2" "BCK_OUT2" "DAT_OUT2" "BCK_OUT3"
+    "DAT_OUT3" "Net-(JP3-Pad2)" "Net-(JP4-Pad1)" "Net-(Q3-Pad1)" "Net-(Q4-Pad1)" "Net-(Q5-Pad2)" "Net-(Q5-Pad1)" "Net-(Q8-Pad3)"
+    "Net-(Q9-Pad3)" "Net-(Q11-Pad3)" "EX_SDA" "EX_SCL" "Net-(R4-Pad2)" "SPDIF_RX" LRK3 "Net-(R7-Pad1)"
+    "USB_ON" BCK3 "Net-(R9-Pad1)" "Net-(R10-Pad2)" DAT3 "Net-(R11-Pad1)" "/ADC_DAC/BIAS_5VA" "/ADC_DAC/BIAS_5VB"
+    "Net-(R26-Pad2)" "Net-(R33-Pad2)" "DAT_IN1" "DAT_IN0" "BCK_IN1" "BCK_IN0" "LRK_IN1" "LRK_IN0"
+    "Net-(R57-Pad2)" "Net-(R58-Pad2)" "Net-(R68-Pad2)" "Net-(R69-Pad2)" "Net-(R71-Pad2)" "Net-(R72-Pad2)" "Net-(R88-Pad2)" "Net-(R88-Pad1)"
+    "Net-(R89-Pad2)" "Net-(R89-Pad1)" "Net-(R90-Pad1)" "SPDIF_TX" "Net-(R94-Pad1)" "Net-(R95-Pad2)" "Net-(R96-Pad2)" "Net-(R97-Pad2)"
+    "Net-(R98-Pad2)" "Net-(R99-Pad2)" "Net-(R100-Pad2)" "Net-(R101-Pad2)" "Net-(R102-Pad2)" "Net-(R103-Pad2)" "Net-(R104-Pad2)" "Net-(R105-Pad2)"
+    "Net-(R106-Pad2)" "Net-(R107-Pad2)" "Net-(R108-Pad2)" "/DSP/EEPROM_1" "Net-(R109-Pad2)" "/DSP/EEPROM_5" "Net-(R110-Pad2)" "/DSP/EEPROM_6"
+    "BGM_ON" "/DSP/EEPROM_2" "Net-(R118-Pad1)" "Net-(U3-Pad11)" "Net-(U3-Pad4)" "Net-(U3-Pad10)" "Net-(U3-Pad9)" "Net-(U3-Pad8)"
+    "Net-(U3-Pad7)" "LRK_IN3" "DAT_IN2" "LRK_IN2" "BCK_IN2" "Net-(U12-Pad80)" "Net-(U12-Pad79)" "Net-(U12-Pad26)"
+    "Net-(C22-Pad2)" "Net-(J16-Pad3)" "Net-(Q14-Pad2)" "Net-(C41-Pad2)"
+    (clearance_class "kicad_default")
+    (via_rule kicad_default)
+    (rule
+      (width 200.0)
+    )
+    (circuit 
+      (use_layer F.Cu B.Cu)
+    )
+  )
+  (class 0.25Thick
+    (clearance_class 0.25Thick)
+    (via_rule 0.25Thick)
+    (rule
+      (width 250.0)
+    )
+    (circuit 
+      (use_layer F.Cu B.Cu)
+    )
+  )
+  (class 0.25Thin
+    (clearance_class 0.25Thin)
+    (via_rule 0.25Thin)
+    (rule
+      (width 250.0)
+    )
+    (circuit 
+      (use_layer F.Cu B.Cu)
+    )
+  )
+  (class 0.3mm
+    (clearance_class 0.3mm)
+    (via_rule 0.3mm)
+    (rule
+      (width 300.0)
+    )
+    (circuit 
+      (use_layer F.Cu B.Cu)
+    )
+  )
+  (class 0.4mm
+    (clearance_class 0.4mm)
+    (via_rule 0.4mm)
+    (rule
+      (width 400.0)
+    )
+    (circuit 
+      (use_layer F.Cu B.Cu)
+    )
+  )
+  (class 0.8mm
+    (clearance_class 0.8mm)
+    (via_rule 0.8mm)
+    (rule
+      (width 800.0)
+    )
+    (circuit 
+      (use_layer F.Cu B.Cu)
+    )
+  )
+  (class 1mm
+    (clearance_class 1mm)
+    (via_rule 1mm)
+    (rule
+      (width 1000.0)
+    )
+    (circuit 
+      (use_layer F.Cu B.Cu)
+    )
+  )
+  (class 2mm
+    (clearance_class 2mm)
+    (via_rule 2mm)
+    (rule
+      (width 2000.0)
+    )
+    (circuit 
+      (use_layer F.Cu B.Cu)
+    )
+  )
+)

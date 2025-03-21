@@ -1,0 +1,85 @@
+
+(rules PCB POT_SWITCH
+  (snap_angle 
+    fortyfive_degree
+  )
+  (autoroute_settings
+    (fanout off)
+    (autoroute on)
+    (postroute on)
+    (vias on)
+    (via_costs 50)
+    (plane_via_costs 5)
+    (start_ripup_costs 100)
+    (start_pass_no 1815)
+    (layer_rule F.Cu
+      (active on)
+      (preferred_direction vertical)
+      (preferred_direction_trace_costs 1.0)
+      (against_preferred_direction_trace_costs 3.1)
+    )
+    (layer_rule B.Cu
+      (active on)
+      (preferred_direction horizontal)
+      (preferred_direction_trace_costs 1.0)
+      (against_preferred_direction_trace_costs 1.5)
+    )
+  )
+  (rule
+    (width 300.0)
+    (clear 200.2)
+    (clear 150.0 (type smd_to_turn_gap))
+    (clear 50.0 (type smd_smd))
+  )
+  (padstack "Via[0-1]_800:400_um"
+    (shape
+      (circle F.Cu 800.0 0.0 0.0)
+    )
+    (shape
+      (circle B.Cu 800.0 0.0 0.0)
+    )
+    (attach off)
+  )
+  (via 
+    "Via[0-1]_800:400_um" "Via[0-1]_800:400_um" default
+  )
+  (via 
+    "Via[0-1]_800:400_um-kicad_default" "Via[0-1]_800:400_um" "kicad_default"
+  )
+  (via_rule
+    default "Via[0-1]_800:400_um"
+  )
+  (via_rule
+    "kicad_default" "Via[0-1]_800:400_um-kicad_default"
+  )
+  (class default
+    (clearance_class default)
+    (via_rule default)
+    (rule
+      (width 300.0)
+    )
+    (circuit 
+      (use_layer F.Cu B.Cu)
+    )
+  )
+  (class "kicad_default"
+    GND GNDD "Net-(C1-Pad1)" "Net-(C2-Pad1)" "Net-(C3-Pad1)" "Net-(C4-Pad1)" "Net-(C5-Pad1)" "Net-(C6-Pad1)"
+    "Net-(C7-Pad1)" "Net-(C8-Pad1)" "Net-(C9-Pad1)" "Net-(C10-Pad1)" "Net-(C11-Pad1)" "Net-(C12-Pad1)" "POT_0" "POT_3"
+    "POT_1" "POT_4" "POT_2" "POT_5" "Net-(C22-Pad1)" "FOOTSW_C" "FOOTSW_A" "Net-(C25-Pad1)"
+    "Net-(C26-Pad1)" "Net-(C27-Pad1)" "Net-(C28-Pad1)" "CH_SEL" "POT_SW" +3V3 "POT_6" "POT_7"
+    +5V "FOOTLED_A" "FOOTLED_C" "FOOTLED_B" "Net-(D4-Pad3)" "Net-(D4-Pad1)" "Net-(D5-Pad3)" "Net-(D5-Pad1)"
+    "FOOTSW_B" "/PSW_4" "/PSW_2" "/~ON_GRN" "/~ON_MIX" "EFF_ON" "/PSW_3" "/PSW_1"
+    "/~ON_RED" "/~ON_OVF" "Net-(J4-Pad3)" "Net-(Q1-Pad3)" "/~ON_SIG" "Net-(Q2-Pad3)" "Net-(Q3-Pad3)" "Net-(Q4-Pad3)"
+    "POT_SEL" "Net-(R19-Pad1)" "Net-(R20-Pad1)" "Net-(U3-Pad12)" "Net-(U4-Pad4)" "Net-(SW1-Pad4)" "Net-(SW1-Pad3)" "Net-(SW1-Pad2)"
+    "Net-(SW1-Pad1)" "Net-(SW2-Pad4)" "Net-(SW2-Pad3)" "Net-(SW2-Pad2)" "Net-(SW2-Pad1)" "Net-(SW3-Pad4)" "Net-(SW3-Pad3)" "Net-(SW3-Pad2)"
+    "Net-(SW3-Pad1)" "Net-(SW4-Pad4)" "Net-(SW4-Pad3)" "Net-(SW4-Pad2)" "Net-(SW4-Pad1)"
+    (clearance_class "kicad_default")
+    (via_rule kicad_default)
+    (rule
+      (width 300.0)
+    )
+    (circuit 
+      (use_layer F.Cu B.Cu)
+    )
+  )
+)
