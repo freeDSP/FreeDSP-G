@@ -1,4 +1,4 @@
-# FreeDSP-G (A ADAU1467 DSP BOARD)
+# FreeDSP-G (ADAU1467 DSP BOARD)
 ![Strip_PCB](https://github.com/user-attachments/assets/daacdd70-dcf0-49b5-ac47-51541baea21f)
 
 ADAU1467 DSP Board for Electic Guitar Players. The latest version design is 0.2  
