@@ -1,5 +1,5 @@
 /* 
- * Make an text file for SigmaStudio from the .WAV Impluse Responsefile
+ * Make an text file for SigmaStudio from the .RAW Impluse Responsefile
  *  2023 Copyright (c) CyberPit
  *  All Rights Reserved.
  * version 0.1 NonRelased
