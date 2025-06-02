@@ -5,8 +5,8 @@ $Descr A3 16535 11693
 encoding utf-8
 Sheet 1 5
 Title "FreeDSP-G Schematic Circuit Diagram"
-Date "2025-02-20"
-Rev "0.2"
+Date "2025-05-19"
+Rev "0.3"
 Comp "CyberPit 2025"
 Comment1 "(Without BM83 version)"
 Comment2 ""
@@ -307,7 +307,7 @@ Wire Wire Line
 Wire Wire Line
 	2325 1100 8100 1075
 $Sheet
-S 6525 9200 4625 1575
+S 6525 9225 4625 1575
 U 6889E617
 F0 "PSU" 118
 F1 "PSU.sch" 118

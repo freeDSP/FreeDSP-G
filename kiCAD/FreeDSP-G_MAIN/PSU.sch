@@ -5,8 +5,8 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 3 5
 Title "FreeDSP-G Schematic Circuit Diagram"
-Date "2025-02-27"
-Rev "0.2"
+Date "2025-05-19"
+Rev "0.3"
 Comp "CyberPit 2025"
 Comment1 ""
 Comment2 ""
@@ -401,7 +401,7 @@ F 3 "" H 1200 3700 60  0000 C CNN
 	1    1200 3700
 	1    0    0    -1  
 $EndComp
-Text Notes 4000 3725 0    50   ~ 0
+Text Notes 3900 3750 0    50   ~ 0
 (ADC/DAC/Line-Driver Power)
 $Comp
 L Device:C_Small C?

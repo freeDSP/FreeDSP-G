@@ -5,8 +5,8 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 5 5
 Title "FreeDSP-G Schematic Circuit Diagram"
-Date "2025-02-01"
-Rev "0.1"
+Date "2025-05-19"
+Rev "0.3"
 Comp "CyberPit 2025"
 Comment1 ""
 Comment2 ""
@@ -21,7 +21,7 @@ AR Path="/677034A1/6812DEBA" Ref="FB?"  Part="1"
 AR Path="/6823265E/6812DEBA" Ref="FB?"  Part="1" 
 AR Path="/6811C4A3/6812DEBA" Ref="FB17"  Part="1" 
 F 0 "FB17" V 1300 4475 60  0000 C CNN
-F 1 "GZ1608D601TF" V 1200 4475 60  0000 C CNN
+F 1 "GZ1608D601TF" V 1225 4625 60  0000 C CNN
 F 2 "Inductor_SMD:L_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 1600 4675 60  0001 L CNN
 F 3 "https://www.murata.com/en-us/products/productdata/8796738650142/ENFA0003.pdf" H 1600 4775 60  0001 L CNN
 F 4 "490-1014-1-ND" H 1600 4875 60  0001 L CNN "Digi-Key_PN"
@@ -533,13 +533,11 @@ Wire Wire Line
 Connection ~ 8725 4000
 Wire Wire Line
 	8725 4000 8825 4000
-Wire Wire Line
-	1525 4375 3400 4375
 Text Label 1525 4375 0    50   ~ 0
 VBUS
 Wire Wire Line
 	8225 1650 7525 1650
-Text Label 7100 1650 0    50   ~ 0
+Text Label 6500 1650 0    50   ~ 0
 VBUS
 Wire Wire Line
 	8225 1750 7525 1750
@@ -638,7 +636,7 @@ Wire Wire Line
 	7675 4000 8300 4000
 Connection ~ 7675 3350
 Connection ~ 8300 4000
-Text Notes 1100 5425 0    98   ~ 20
+Text Notes 800  5425 0    98   ~ 20
 Multi\nFunction\nButton
 Text Notes 7850 2275 0    50   ~ 0
 (5.1k)
@@ -648,4 +646,119 @@ Text GLabel 2575 2275 0    50   Input ~ 0
 BT_TXD
 Wire Wire Line
 	2575 2275 3400 2275
+$Comp
+L Diode:BAT43W-V D?
+U 1 1 68339A60
+P 6950 1650
+AR Path="/5D60B524/68339A60" Ref="D?"  Part="1" 
+AR Path="/68339A60" Ref="D?"  Part="1" 
+AR Path="/6787F48A/68339A60" Ref="D?"  Part="1" 
+AR Path="/6889E617/68339A60" Ref="D?"  Part="1" 
+AR Path="/6811C4A3/68339A60" Ref="D14"  Part="1" 
+F 0 "D14" H 6950 1775 50  0000 C CNN
+F 1 "B5819W SL" H 6925 1550 50  0000 C CNN
+F 2 "Diode_SMD:D_SOD-123" H 6950 1475 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/85660/bat42.pdf" H 6950 1650 50  0001 C CNN
+F 4 "C8598" H 6950 1650 50  0001 C CNN "JLPCB#"
+F 5 "SBD 1A/40V" H 6950 1650 50  0001 C CNN "Description"
+	1    6950 1650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6500 1650 6800 1650
+$Comp
+L Diode:BAT43W-V D?
+U 1 1 683407FE
+P 1350 4075
+AR Path="/5D60B524/683407FE" Ref="D?"  Part="1" 
+AR Path="/683407FE" Ref="D?"  Part="1" 
+AR Path="/6787F48A/683407FE" Ref="D?"  Part="1" 
+AR Path="/6889E617/683407FE" Ref="D?"  Part="1" 
+AR Path="/6811C4A3/683407FE" Ref="D9"  Part="1" 
+F 0 "D9" H 1350 4200 50  0000 C CNN
+F 1 "B5819W SL" H 1325 3975 50  0000 C CNN
+F 2 "Diode_SMD:D_SOD-123" H 1350 3900 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/85660/bat42.pdf" H 1350 4075 50  0001 C CNN
+F 4 "C8598" H 1350 4075 50  0001 C CNN "JLPCB#"
+F 5 "SBD 1A/40V" H 1350 4075 50  0001 C CNN "Description"
+	1    1350 4075
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	1350 4225 1350 4375
+Wire Wire Line
+	1350 4375 3400 4375
+$Comp
+L power:+5VA #PWR?
+U 1 1 68349098
+P 1350 3525
+AR Path="/67A62685/68349098" Ref="#PWR?"  Part="1" 
+AR Path="/6787F48A/68349098" Ref="#PWR?"  Part="1" 
+AR Path="/6889E617/68349098" Ref="#PWR?"  Part="1" 
+AR Path="/6811C4A3/68349098" Ref="#PWR0147"  Part="1" 
+F 0 "#PWR0147" H 1350 3375 50  0001 C CNN
+F 1 "+5VA" H 1350 3675 50  0000 C CNN
+F 2 "" H 1350 3525 50  0001 C CNN
+F 3 "" H 1350 3525 50  0001 C CNN
+	1    1350 3525
+	1    0    0    -1  
+$EndComp
+$Comp
+L ferrite_bead:Ferrite_Bead FB?
+U 1 1 6834BA5A
+P 1350 3725
+AR Path="/677034A1/6834BA5A" Ref="FB?"  Part="1" 
+AR Path="/6823265E/6834BA5A" Ref="FB?"  Part="1" 
+AR Path="/6811C4A3/6834BA5A" Ref="FB18"  Part="1" 
+F 0 "FB18" V 1250 3725 60  0000 C CNN
+F 1 "GZ1608D601TF" V 1150 3725 60  0000 C CNN
+F 2 "Inductor_SMD:L_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 1550 3925 60  0001 L CNN
+F 3 "https://www.murata.com/en-us/products/productdata/8796738650142/ENFA0003.pdf" H 1550 4025 60  0001 L CNN
+F 4 "490-1014-1-ND" H 1550 4125 60  0001 L CNN "Digi-Key_PN"
+F 5 "BLM18AG601SN1D" H 1550 4225 60  0001 L CNN "MPN"
+F 6 "Filters" H 1550 4325 60  0001 L CNN "Category"
+F 7 "Ferrite Beads and Chips" H 1550 4425 60  0001 L CNN "Family"
+F 8 "https://www.murata.com/en-us/products/productdata/8796738650142/ENFA0003.pdf" H 1550 4525 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/murata-electronics-north-america/BLM18AG601SN1D/490-1014-1-ND/584462" H 1550 4625 60  0001 L CNN "DK_Detail_Page"
+F 10 "FERRITE BEAD 600 OHM 0603 1LN" H 1550 4725 60  0001 L CNN "Description"
+F 11 "Murata Electronics North America" H 1550 4825 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 1550 4925 60  0001 L CNN "Status"
+F 13 "C1002" H 1350 3725 50  0001 C CNN "JLPCB#"
+	1    1350 3725
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1350 3525 1350 3575
+Wire Wire Line
+	1350 3875 1350 3925
+$Comp
+L dk_Pushbutton-Switches:GPTS203211B SW?
+U 1 1 68317849
+P 1625 5225
+AR Path="/68317849" Ref="SW?"  Part="1" 
+AR Path="/5D902CF8/68317849" Ref="SW?"  Part="1" 
+AR Path="/6787F48A/5D902CF8/68317849" Ref="SW?"  Part="1" 
+AR Path="/67A62685/68317849" Ref="SW?"  Part="1" 
+AR Path="/677034A1/68317849" Ref="SW?"  Part="1" 
+AR Path="/6823265E/68317849" Ref="SW?"  Part="1" 
+AR Path="/6811C4A3/68317849" Ref="SW3"  Part="1" 
+F 0 "SW3" V 1650 5200 50  0000 R CNN
+F 1 "MFB" V 1575 5200 50  0000 R CNN
+F 2 "Button_Switch_THT:SW_Tactile_SPST_Angled_PTS645Vx83-2LFS" H 1625 5425 50  0001 C CNN
+F 3 "" H 1625 5425 50  0001 C CNN
+F 4 "HAND" H 1625 5225 50  0001 C CNN "JLPCB#"
+F 5 "for manual reset button for DSP" H 1625 5225 50  0001 C CNN "Description"
+	1    1625 5225
+	0    -1   1    0   
+$EndComp
+Wire Wire Line
+	1625 5425 1625 5550
+Wire Wire Line
+	1625 5550 1950 5550
+Connection ~ 1950 5550
+Wire Wire Line
+	1625 5025 1625 4575
+Wire Wire Line
+	1625 4575 1950 4575
+Connection ~ 1950 4575
 $EndSCHEMATC
